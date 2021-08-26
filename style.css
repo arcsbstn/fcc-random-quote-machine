@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2.4em;
+  line-height: 0.7em;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+}
+
+i {
+  margin-right: 0.5em;
+}
+
+button, h4 {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+.content-wrapper {
+  height: 100vh;
+}
+
+#quote-box {
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+#new-quote {
+  border: none;
+}
