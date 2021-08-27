@@ -45,8 +45,13 @@ function App() {
         <div className="row">
           {randomQuote ? (
             <>
-              <h2 style={{ color: color }}><i className="fa fa-quote-left"></i>{randomQuote.text}</h2>
-              <h4 style={{ color: color }}>— {randomQuote.author || "No author"}</h4>
+              <h2 id="text"
+                style={{ color: color }}>
+                <i className="fa fa-quote-left"></i>
+                {randomQuote.text}
+              </h2>
+              <h4 id="author"
+                style={{ color: color }}>— {randomQuote.author || "No author"}</h4>
             </>
           ) : (
             <h3>Loading...</h3>
@@ -54,11 +59,13 @@ function App() {
         </div>
         <div className="row text-align-top">
           <div className="col text-align-top">
-            <a style={{ color: color }}
+            <a id="tweet-quote"
+              style={{ color: color }}
               target="_blank"
               href={"https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" +
                 encodeURIComponent('"' + randomQuote.text + '"' + (randomQuote.author ? (" - " + randomQuote.author) : ""))}>
-              <i className="fa fa-twitter-square" style={{ color: color }}></i>
+              <i className="fa fa-twitter-square"
+                style={{ color: color }}></i>
             </a>
           </div>
           <div className="col">
